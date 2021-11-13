@@ -20,22 +20,20 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+li {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
 }
 
-header li {
-  list-style-type: none; /* Убираем маркеры */
-}
-
 .logo {
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 }
-
-.logo:hover {
+span {
   color: var(--accent-color);
 }
-
 /* Site nav */
 
 .auth-nav .link {
@@ -53,7 +51,9 @@ header li {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
+.site-nav .link.curent {
+  color: var(--accent-color);
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -83,6 +83,10 @@ header li {
   background-color: var(--accent-color);
   color: #ffffff;
   border-radius: 4px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 9;
 }
 
 /*2knopka*/
@@ -91,8 +95,16 @@ header li {
   background: #f5f4fa;
   border-radius: 4px;
   color: var(--primary-text-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
 }
-
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
 /* main  1 */
 
 .feature-list .title {
@@ -175,6 +187,4 @@ footer li {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:var(--accent-color)
-  
-  
+}
